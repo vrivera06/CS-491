@@ -1,11 +1,10 @@
 # React Router Project
 
-A React Router app using **Bootstrap** and **Lottie**.
+React Router demo (Home, About, Users, 404) with:
 
-- Routes: Home, About, Users, Contact, and a 404 page
-- Bootstrap: responsive navbar, grid, cards, list group, form, alert
-- Lottie: animated bouncing dots (`src/assets/bouncing-dots.json`) via `lottie-react`
-- Added for this assignment: the **Contact** page (Bootstrap form that shows a Lottie animation and success alert on submit)
+- Bootstrap: imported in `main.jsx`, used for the button and the alert on the Contact page
+- Lottie: animation on the Home page (`src/assets/bouncing-dots.json`) using `lottie-react`
+- Added: a Contact page and link
 
 ```
 npm install

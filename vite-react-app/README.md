@@ -1,7 +1,6 @@
 # Vite React App
 
-A Vite + React app where the default starter page was changed to a custom intro page
-(heading, likes counter, course list and GitHub link).
+The default Vite + React page with the heading and text changed.
 
 ```
 npm install

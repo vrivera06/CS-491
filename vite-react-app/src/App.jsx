@@ -5,13 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [likes, setLikes] = useState(0)
-
-  const courses = [
-    { name: 'CS 491', text: 'React, React Router, Bootstrap and Lottie' },
-    { name: 'CS 361', text: 'Software engineering' },
-    { name: 'CS 371', text: 'Systems and networks' },
-  ]
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -21,19 +15,19 @@ function App() {
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+
+        
         <div>
-          <h1>Hi, I'm Victor</h1>
-          <p>
-            This is my first Vite + React app for CS 491. I replaced the default
-            starter page with my own content.
-          </p>
+          <h1>Victor's Vite App</h1>
+          <p>This is my CS 491 Vite + React app.</p>
         </div>
+
         <button
           type="button"
           className="counter"
-          onClick={() => setLikes((likes) => likes + 1)}
+          onClick={() => setCount((count) => count + 1)}
         >
-          👍 Likes: {likes}
+          Count is {count}
         </button>
       </section>
 
@@ -41,26 +35,63 @@ function App() {
 
       <section id="next-steps">
         <div id="docs">
-          <h2>My courses</h2>
-          <p>What I'm working on this semester</p>
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#documentation-icon"></use>
+          </svg>
+          <h2>Documentation</h2>
+          <p>Your questions, answered</p>
           <ul>
-            {courses.map((course) => (
-              <li key={course.name}>
-                <strong>{course.name}</strong>: {course.text}
-              </li>
-            ))}
+            <li>
+              <a href="https://vite.dev/" target="_blank">
+                <img className="logo" src={viteLogo} alt="" />
+                Explore Vite
+              </a>
+            </li>
+            <li>
+              <a href="https://react.dev/" target="_blank">
+                <img className="button-icon" src={reactLogo} alt="" />
+                Learn more
+              </a>
+            </li>
           </ul>
         </div>
         <div id="social">
-          <h2>Find me</h2>
-          <p>All my class projects live here</p>
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#social-icon"></use>
+          </svg>
+          <h2>Connect with us</h2>
+          <p>Join the Vite community</p>
           <ul>
             <li>
-              <a href="https://github.com/vrivera06/CS-491" target="_blank">
+              <a href="https://github.com/vitejs/vite" target="_blank">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://chat.vite.dev/" target="_blank">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#discord-icon"></use>
+                </svg>
+                Discord
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/vite_js" target="_blank">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#x-icon"></use>
+                </svg>
+                X.com
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#bluesky-icon"></use>
+                </svg>
+                Bluesky
               </a>
             </li>
           </ul>
