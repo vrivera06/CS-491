@@ -1,0 +1,10 @@
+.lottie-hero {
+  max-width: 420px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+}
+
+.lottie-small {
+  max-width: 200px;
+  aspect-ratio: 4 / 3;
+}
